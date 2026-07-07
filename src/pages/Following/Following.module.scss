@@ -1,0 +1,30 @@
+.wrapper {
+    max-width: 638px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 16px;
+    color: rgba(22, 24, 35, 0.75);
+
+    h3 {
+        margin-top: 16px;
+        font-size: 1.8rem;
+    }
+
+    p {
+        margin-top: 8px;
+        font-size: 1.4rem;
+        color: rgba(22, 24, 35, 0.53);
+    }
+}
+
+.empty-icon {
+    font-size: 4rem;
+    color: rgba(22, 24, 35, 0.3);
+}

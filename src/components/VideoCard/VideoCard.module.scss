@@ -1,0 +1,116 @@
+.wrapper {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(22, 24, 35, 0.12);
+}
+
+.avatar {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.body {
+    flex: 1;
+    min-width: 0;
+}
+
+.head {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.nickname {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.92);
+}
+
+.check {
+    color: #20d5ec;
+    font-size: 1.3rem;
+}
+
+.username {
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.53);
+}
+
+.description {
+    margin-top: 4px;
+    font-size: 1.5rem;
+    color: rgba(22, 24, 35, 0.92);
+    line-height: 1.4;
+}
+
+.music {
+    margin-top: 6px;
+    font-size: 1.3rem;
+    color: rgba(22, 24, 35, 0.75);
+}
+
+.video-area {
+    position: relative;
+    margin-top: 12px;
+    width: 240px;
+    height: 426px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.play-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.2rem;
+    color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding-top: 60px;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 2.2rem;
+
+    span {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: rgba(22, 24, 35, 0.6);
+    }
+
+    &.active {
+        color: var(--primary-color, #fe2c55);
+    }
+}

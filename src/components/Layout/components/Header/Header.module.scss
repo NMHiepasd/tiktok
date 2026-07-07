@@ -1,0 +1,134 @@
+.wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: var(--default-layout-header-height, 60px);
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 12%);
+    display: flex;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: var(--default-layout-width, 1150px);
+}
+
+.logo img {
+    height: 32px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 361px;
+    height: 42px;
+    padding-left: 16px;
+    border: 1.5px solid rgba(22, 24, 35, 0.12);
+    border-radius: 999px;
+    background-color: #f1f1f2;
+
+    input {
+        flex: 1;
+        height: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.6rem;
+        color: rgba(22, 24, 35, 0.92);
+
+        &::placeholder {
+            color: rgba(22, 24, 35, 0.34);
+        }
+    }
+}
+
+.clear-btn,
+.loading {
+    color: rgba(22, 24, 35, 0.34);
+    font-size: 1.6rem;
+    margin-right: 8px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.loading {
+    animation: spinning 0.8s linear infinite;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.search-btn {
+    width: 52px;
+    height: 100%;
+    font-size: 1.6rem;
+    border: none;
+    border-left: 1px solid rgba(22, 24, 35, 0.12);
+    background-color: transparent;
+    color: rgba(22, 24, 35, 0.34);
+    cursor: pointer;
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.search-result {
+    width: 361px;
+}
+
+.search-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgba(22, 24, 35, 0.5);
+    padding: 4px 8px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: none;
+    background-color: transparent;
+    color: rgba(22, 24, 35, 0.75);
+    font-size: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
